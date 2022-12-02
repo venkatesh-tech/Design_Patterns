@@ -1,5 +1,5 @@
 package com.patterns.factory;
-
+// step 2
 public class ChickenPizza implements Pizza {
 
 	@Override
