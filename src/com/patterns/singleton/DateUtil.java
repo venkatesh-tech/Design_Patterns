@@ -1,8 +1,11 @@
 package com.patterns.singleton;
 
-public class DateUtil {
+import java.io.Serializable;
 
-	private static DateUtil instance; // step 3
+public class DateUtil implements Serializable,Cloneable{
+
+	private static final long serialVersionUID = 1L;
+	private static volatile DateUtil instance; // step 3
 
 	private DateUtil() { // step 1
 
@@ -20,5 +23,13 @@ public class DateUtil {
 
 		return instance;
 	}
+	
+	protected Object readResolve() {
+		return instance;
+	}
 
+	@Override  // To prevet objects from cloning
+	protected Object clone() throws CloneNotSupportedException {
+		throw new CloneNotSupportedException();
+	}
 }
