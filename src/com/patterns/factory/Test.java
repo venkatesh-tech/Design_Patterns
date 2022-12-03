@@ -6,6 +6,6 @@ public class Test {
 
 		PizzaStore ps = new PizzaStore();
 		ps.orderPizza("veg");
-	}
+		}
 
 }
