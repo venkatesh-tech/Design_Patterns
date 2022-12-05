@@ -1,4 +1,4 @@
-package com.patterns.factory;
+		package com.patterns.factory;
 // step 4
 public class Test {
 
