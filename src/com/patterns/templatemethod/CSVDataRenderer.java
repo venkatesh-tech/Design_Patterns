@@ -1,10 +1,10 @@
 package com.patterns.templatemethod;
 
-public class XMLDataRenderer extends DataRenderer {
+public class CSVDataRenderer extends DataRenderer {
 
 	@Override
 	public String readData() {
-		return "XML Data";
+		return "CSV Data";
 	}
 
 	@Override
